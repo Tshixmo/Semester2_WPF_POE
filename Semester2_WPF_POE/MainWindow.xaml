@@ -56,6 +56,38 @@
                 </Grid>
             </TabItem>
 
+            <!-- View Previous Claims Tab -->
+            <TabItem Header="View Previous Claims">
+                <Grid>
+                    <ListView Name="PreviousClaimsListView" Margin="20">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Claim ID" Width="100" DisplayMemberBinding="{Binding ClaimID}"/>
+                                <GridViewColumn Header="Submission Date" Width="150" DisplayMemberBinding="{Binding SubmissionDate}"/>
+                                <GridViewColumn Header="Hours Worked" Width="100" DisplayMemberBinding="{Binding HoursWorked}"/>
+                                <GridViewColumn Header="Hourly Rate" Width="100" DisplayMemberBinding="{Binding HourlyRate}"/>
+                                <GridViewColumn Header="Total Amount" Width="100" DisplayMemberBinding="{Binding TotalAmount}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </TabItem>
+
+            <!-- Claim Status Tab -->
+            <TabItem Header="Claim Status">
+                <Grid>
+                    <ListView Name="ClaimStatusListView" Margin="20">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Claim ID" Width="100" DisplayMemberBinding="{Binding ClaimID}"/>
+                                <GridViewColumn Header="Submission Date" Width="150" DisplayMemberBinding="{Binding SubmissionDate}"/>
+                                <GridViewColumn Header="Status" Width="150" DisplayMemberBinding="{Binding Status}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </TabItem>
+
         </TabControl>
     </Grid>
 </Window>
