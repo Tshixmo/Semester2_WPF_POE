@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TextBlock Text="WELCOME TO THE CONTRACT MONTHLY CLAIM SYSTEM!!!" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Foreground="#2E8B57"/>
+        <TabControl x:Name="CMCS" Margin="20,60,33,37">
+            <!-- Login Tab -->
+            <TabItem Header="Login">
+                <Grid>
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="453" Height="300">
+                        <TextBlock Text="Username:" FontSize="16" Margin="0,0,0,10"/>
+                        <TextBox Name="UsernameTextBox" Height="30" Margin="0,0,0,20"/>
 
+                        <TextBlock Text="Password:" FontSize="16" Margin="0,0,0,10"/>
+                        <PasswordBox Name="PasswordBox" Height="30" Margin="0,0,0,20"/>
+                        <!--Add Radio button for user role-->
+
+                        <Button Content="Login" Width="150" Height="40" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
