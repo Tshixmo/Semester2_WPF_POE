@@ -11,7 +11,12 @@ Claim Tracking: View the status of submitted claims
 Claim Approval: Coordinators and managers can approve or reject claims
 User-Friendly Interface: A clean and intuitive WPF-based GUI
 
-
+To run the application: 
+Go to this github link: https://github.com/Tshixmo/Semester2_WPF_POE
+Click the green **code** button and then **Open with Visual Studio**
+Clone the repository on your local machine
+Once Visual Studio is opened
+Build the solution and run the code. 
 
 Once the application is running, you can:
 Log in as a Lecturer, Program Coordinator, or Academic Manager.
